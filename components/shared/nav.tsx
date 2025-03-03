@@ -1,7 +1,7 @@
 const Nav = () => {
 	return (
 		<nav className='mr-auto'>
-			<ul className='menu flex justify-between items-center gap-10 body-one'>
+			<ul className='menu flex justify-start items-center gap-10 body-one'>
 				<li>
 					<a href='/' className='transition-colors hover:text-lc'>
 						home
