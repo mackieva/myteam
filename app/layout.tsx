@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Livvic } from 'next/font/google';
 import Header from '@/components/header/header';
+import Footer from '@/components/shared/footer';
 import './globals.css';
 
 const livvic = Livvic({
@@ -24,6 +25,7 @@ export default function RootLayout({
 			<body className={`${livvic.variable} `}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
