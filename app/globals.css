@@ -12,6 +12,16 @@
 	}
 }
 
+@theme {
+	--color-mg: hsl(186, 98%, 17%);
+	--color-lc: hsl(0, 87%, 73%);
+	--color-rb: hsl(179, 42%, 63%);
+	--color-pb: hsl(187, 41%, 29%);
+	--color-djg: hsl(186, 100%, 14%);
+	--color-ssg: hsl(186, 96%, 10%);
+	--color-dg: hsl(186, 100%, 8%);
+}
+
 html,
 body {
 	max-width: 100vw;
@@ -21,7 +31,7 @@ body {
 body {
 	color: var(--foreground);
 	background: var(--background);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-livvic);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -41,4 +51,44 @@ a {
 	html {
 		color-scheme: dark;
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 700;
+}
+
+.h1-lg {
+	font-size: 100px;
+	line-height: 100px;
+}
+
+.h1-sm {
+	font-size: 64px;
+	line-height: 56px;
+}
+
+.h2 {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.h3 {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.body-one {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 600;
+}
+
+.body-two {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 600;
 }
