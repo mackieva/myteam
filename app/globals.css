@@ -20,6 +20,8 @@
 	--color-djg: hsl(186, 100%, 14%);
 	--color-ssg: hsl(186, 96%, 10%);
 	--color-dg: hsl(186, 100%, 8%);
+
+	--breakpoint-lg: 1440px;
 }
 
 html,
@@ -29,22 +31,11 @@ body {
 }
 
 body {
-	color: var(--foreground);
-	background: var(--background);
+	color: #fff;
+	background: var(--color-mg);
 	font-family: var(--font-livvic);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
