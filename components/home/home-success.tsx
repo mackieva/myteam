@@ -21,9 +21,9 @@ const HomeSuccess = () => {
 				</g>
 			</svg>
 			<div className='max-w-[1110px] mx-auto'>
-				<h2 className='h2 text-center mb-14'>
-					Delivering real results for top companies. Some of our success
-					stories.
+				<h2 className='h2 text-center mb-14 text-balance'>
+					Delivering real results for top companies. Some of our{' '}
+					<span className='text-rb'>success stories.</span>
 				</h2>
 				<div className='grid grid-cols-3 gap-[30px]'>
 					<div className='flex flex-col justify-between items-center text-center pt-9 relative'>
