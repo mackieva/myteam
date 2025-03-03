@@ -1,5 +1,3 @@
-import './home-hero.css';
-
 const HomeHero = () => {
 	return (
 		<section className='pt-[129px] relative'>
