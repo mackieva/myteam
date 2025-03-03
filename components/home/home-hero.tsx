@@ -7,7 +7,7 @@ const HomeHero = () => {
 				height='200'
 				className='absolute left-[-100px] top-[129px]'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#79C8C7' d='M100 200h100V100H100z' />
 					<path
 						fill='#012F34'
@@ -39,7 +39,7 @@ const HomeHero = () => {
 					height='100'
 					className='absolute bottom-0 right-[0]'
 				>
-					<g fill='none' fill-rule='evenodd'>
+					<g fill='none' fillRule='evenodd'>
 						<circle cx='100' cy='100' r='100' fill='#2C6269' />
 						<path
 							fill='#012F34'

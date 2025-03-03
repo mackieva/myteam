@@ -9,7 +9,7 @@ const PreFooter = () => {
 				height='144'
 				className='absolute bottom-0 left-0'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 144H0V44h100z' />
 					<path
 						fill='#004047'

@@ -55,7 +55,7 @@ const HomeFeatures = () => {
 				height='244'
 				className='absolute bottom-0 -right-[100px]'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 144H0V44h100z' />
 					<path
 						fill='#014E56'
