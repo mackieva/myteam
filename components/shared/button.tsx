@@ -1,4 +1,5 @@
 import './button.css';
+import Link from 'next/link';
 
 const Button = ({
 	style,
@@ -10,12 +11,12 @@ const Button = ({
 	label: string;
 }) => {
 	return (
-		<a
+		<Link
 			href={`${link}`}
 			className={`body-one px-8 pt-2 pb-3 rounded-3xl btn btn-${style}`}
 		>
 			{label}
-		</a>
+		</Link>
 	);
 };
 
