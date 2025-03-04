@@ -1,11 +1,11 @@
 const HomeHero = () => {
 	return (
-		<section className='pt-[129px] relative'>
+		<section className='pt-[112px] lg:pt-[129px] relative'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='200'
-				className='absolute left-[-100px] top-[129px]'
+				className='hidden lg:block absolute left-[-100px] top-[129px]'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#79C8C7' d='M100 200h100V100H100z' />
@@ -19,15 +19,15 @@ const HomeHero = () => {
 					/>
 				</g>
 			</svg>
-			<div className='max-w-[1110px] mx-auto pb-[250px] grid grid-cols-[635px_445px] gap-[30px] relative'>
+			<div className='max-w-[683px] mx-auto flex flex-col justify-center items-center gap-6 relative  pb-[256px] lg:pb-[250px] lg:grid lg:max-w-[1110px] lg:grid-cols-[635px_445px] lg:gap-[30px]'>
 				<div>
-					<h1 className='h1-lg max-w-[10ch]'>
+					<h1 className='text-center lg:text-left text-[64px] leading-[56px] max-w-[10ch] lg:text-[100px] lg:leading-[100px]'>
 						Find the best <span className='text-lc'>talent</span>
 					</h1>
 				</div>
-				<div className='flex flex-col items-start justify-between'>
-					<span className='h-1 w-[50px] bg-rb' />
-					<p className='body-one'>
+				<div className='flex flex-col items-start justify-between h-full'>
+					<span className='hidden lg:block h-1 w-[50px] bg-rb' />
+					<p className='text-[15px] leading-[28px] text-center max-w-[457px] lg:text-left lg:max-w-auto lg:text-[18px]'>
 						Finding the right people and building high performing teams can be
 						hard. Most companies aren't tapping into the abundance of global
 						talent. We're about to change that.
@@ -37,7 +37,7 @@ const HomeHero = () => {
 					xmlns='http://www.w3.org/2000/svg'
 					width='358'
 					height='100'
-					className='absolute bottom-0 right-[0]'
+					className='absolute bottom-0 right-[50%] transform-[translateX(50%)] lg:right-[0]'
 				>
 					<g fill='none' fillRule='evenodd'>
 						<circle cx='100' cy='100' r='100' fill='#2C6269' />

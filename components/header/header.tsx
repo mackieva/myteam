@@ -5,7 +5,7 @@ import Button from '../shared/button';
 
 const Header = () => {
 	return (
-		<header className='md:max-w-[689px] lg:max-w-[1110px] mx-auto mt-[73px] flex justify-start items-center'>
+		<header className='max-w-[689px] lg:max-w-[1110px] mx-auto mt-[73px] flex justify-start items-center'>
 			<Image
 				src={logo}
 				alt='MyTeam Text Logo'
