@@ -54,7 +54,7 @@ const AboutDirectors = () => {
 				height='200'
 				className='absolute top-0 -left-[100px]'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100h100V0H100z' />
 					<path
 						fill='#012F34'
@@ -82,7 +82,7 @@ const AboutDirectors = () => {
 				height='100'
 				className='absolute bottom-0 right-0'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#002529' d='M0 100h100V0H0z' />
 					<path
 						fill='#79C8C7'

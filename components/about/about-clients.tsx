@@ -14,7 +14,7 @@ const AboutClients = () => {
 				height='200'
 				className='absolute top-0 left-0'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100H0V0h100z' />
 					<path
 						fill='#014E56'

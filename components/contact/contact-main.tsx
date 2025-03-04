@@ -13,7 +13,7 @@ const ContactMain = () => {
 				height='200'
 				className='absolute top-[120px] -left-[100px]'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100h100V0H100z' />
 					<path
 						fill='#012F34'
@@ -69,7 +69,7 @@ const ContactMain = () => {
 				height='225'
 				className='absolute bottom-0 -right-[100px]'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path
 						fill='#012F34'
 						d='M.5 100.5C.5 45.272 45.272.5 100.5.5s100 44.772 100 100-44.772 100-100 100-100-44.772-100-100zm67 0c0 18.225 14.775 33 33 33s33-14.775 33-33-14.775-33-33-33-33 14.775-33 33z'

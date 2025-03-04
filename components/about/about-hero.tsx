@@ -21,7 +21,7 @@ const AboutHero = () => {
 				height='200'
 				className='absolute bottom-0 -right-[100px]'
 			>
-				<g fill='none' fill-rule='evenodd'>
+				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100H0V0h100z' />
 					<path
 						fill='#F67E7E'
