@@ -7,12 +7,12 @@ import Image from 'next/image';
 
 const AboutClients = () => {
 	return (
-		<section className='bg-ssg py-[140px] relative'>
+		<section className='bg-ssg py-[100px] lg:py-[140px] relative overflow-hidden'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='200'
-				className='absolute top-0 left-0'
+				className='absolute -top-[100px] lg:top-0 left-0'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100H0V0h100z' />
@@ -26,14 +26,36 @@ const AboutClients = () => {
 					/>
 				</g>
 			</svg>
-			<div className='max-w-[1110px] mx-auto'>
-				<h2 className='h2 text-center mb-14'>Some of our clients</h2>
-				<div className='flex justify-between items-center gap-[80px]'>
-					<Image src={verge} alt='The Verge Text Logo' />
-					<Image src={jakarta} alt='The Jakarta Post Text Logo' />
-					<Image src={guardian} alt='The Guardian Text Logo' />
-					<Image src={techradar} alt='techradar Text Logo' />
-					<Image src={gadgets} alt='Gadgets Now Text Logo' />
+			<div className='max-w-[689px] lg:max-w-[1110px] mx-auto'>
+				<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-center mb-14'>
+					Some of our clients
+				</h2>
+				<div className='flex justify-between items-center gap-[50px] lg:gap-[80px]'>
+					<Image
+						src={verge}
+						alt='The Verge Text Logo'
+						className='w-[75%] h-auto lg:w-auto'
+					/>
+					<Image
+						src={jakarta}
+						alt='The Jakarta Post Text Logo'
+						className='w-[75%] h-auto lg:w-auto'
+					/>
+					<Image
+						src={guardian}
+						alt='The Guardian Text Logo'
+						className='w-[75%] h-auto lg:w-auto'
+					/>
+					<Image
+						src={techradar}
+						alt='techradar Text Logo'
+						className='w-[75%] h-auto lg:w-auto'
+					/>
+					<Image
+						src={gadgets}
+						alt='Gadgets Now Text Logo'
+						className='w-[75%] lg:w-auto'
+					/>
 				</div>
 			</div>
 		</section>
