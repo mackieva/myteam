@@ -6,12 +6,12 @@ import ContactForm from './contact-form';
 
 const ContactMain = () => {
 	return (
-		<section className='relative py-[120px]'>
+		<section className='relative px-6 md:px-0 py-[120px] overflow-hidden'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='200'
-				className='absolute top-[120px] -left-[100px]'
+				className='hidden md:block absolute top-[120px] -left-[100px]'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100h100V0H100z' />
@@ -29,16 +29,20 @@ const ContactMain = () => {
 					/>
 				</g>
 			</svg>
-			<div className='max-w-[542px] lg:max-w-[1110px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[64px] lg:gap-[30px]'>
+			<div className='max-w-[542px] lg:max-w-[1110px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[56px] md:gap-[64px] lg:gap-[30px]'>
 				<div className='max-w-[515px] lg:max-w-auto mx-auto lg:mx-0'>
-					<h1 className='text-center lg:text-left text-[64px] leading-[56px] lg:leading-[100px] lg:max-w-[10ch] mb-6 lg:mb-4'>
+					<h1 className='text-center lg:text-left text-[40px] leading-[40px] md:text-[64px] md:leading-[56px] lg:leading-[100px] lg:max-w-[10ch] mb-4 md:mb-6 lg:mb-4'>
 						Contact
 					</h1>
 					<h2 className='text-lc text-center lg:text-left text-[32px] leading-[48px] mb-8'>
 						Ask us about
 					</h2>
 					<div className='flex justify-start items-center gap-[23px] mb-2'>
-						<Image src={person} alt='Person Icon With Circle Background' />
+						<Image
+							src={person}
+							alt='Person Icon With Circle Background'
+							className='ml-[7px]'
+						/>
 						<div>
 							<p className='body-one'>The quality of our talent network</p>
 						</div>
@@ -67,7 +71,7 @@ const ContactMain = () => {
 				xmlns='http://www.w3.org/2000/svg'
 				width='201'
 				height='225'
-				className='absolute bottom-0 -right-[100px]'
+				className='absolute -bottom-[100px] md:bottom-0 -right-[100px]'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path
