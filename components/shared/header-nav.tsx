@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const HeaderNav = () => {
 	return (
-		<nav className='mr-auto'>
+		<nav className='mr-auto hidden md:block'>
 			<ul className='menu flex justify-start items-center gap-10 body-one'>
 				<li>
 					<Link
