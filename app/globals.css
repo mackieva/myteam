@@ -22,7 +22,7 @@
 	--color-djg: hsl(186, 100%, 14%);
 	--color-ssg: hsl(186, 96%, 10%);
 	--color-dg: hsl(186, 100%, 8%);
-
+	--breakpoint-md: 768px;
 	--breakpoint-lg: 1440px;
 }
 

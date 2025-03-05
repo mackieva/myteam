@@ -19,9 +19,9 @@ const HomeHero = () => {
 					/>
 				</g>
 			</svg>
-			<div className='max-w-[683px] mx-auto flex flex-col justify-center items-center gap-6 relative  pb-[256px] lg:pb-[250px] lg:grid lg:max-w-[1110px] lg:grid-cols-[635px_445px] lg:gap-[30px]'>
+			<div className='px-6 md:px-0 max-w-[683px] mx-auto flex flex-col justify-center items-center gap-6 relative pb-[197px] md:pb-[256px] lg:pb-[250px] lg:grid lg:max-w-[1110px] lg:grid-cols-[635px_445px] lg:gap-[30px]'>
 				<div>
-					<h1 className='text-center lg:text-left text-[64px] leading-[56px] max-w-[10ch] lg:text-[100px] lg:leading-[100px]'>
+					<h1 className='text-center lg:text-left text-[40px] leading-[40px] md:text-[64px] md:leading-[56px] max-w-[10ch] lg:text-[100px] lg:leading-[100px]'>
 						Find the best <span className='text-lc'>talent</span>
 					</h1>
 				</div>
