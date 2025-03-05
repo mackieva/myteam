@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const HomeSuccess = () => {
 	return (
-		<section className='py-[100px] lg:py-[140px] relative'>
+		<section className='px-6 md:px-0 pt-[140px] pb-[164px] md:py-[100px] lg:py-[140px] relative'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='147'
@@ -21,7 +21,7 @@ const HomeSuccess = () => {
 				</g>
 			</svg>
 			<div className='max-w-[573px] lg:max-w-[1110px] mx-auto'>
-				<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-center mb-14 text-pretty lg:text-balance'>
+				<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-center mb-12 md:mb-14 text-pretty lg:text-balance'>
 					Delivering real results for top companies. Some of our{' '}
 					<span className='text-rb text-nowrap lg:text-wrap'>
 						success stories.
