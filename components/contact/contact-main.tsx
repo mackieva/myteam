@@ -29,12 +29,12 @@ const ContactMain = () => {
 					/>
 				</g>
 			</svg>
-			<div className='max-w-[1110px] mx-auto grid grid-cols-2 gap-[30px]'>
-				<div>
-					<h1 className='text-[64px] leading-[100px] max-w-[10ch] mb-4'>
+			<div className='max-w-[542px] lg:max-w-[1110px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[64px] lg:gap-[30px]'>
+				<div className='max-w-[515px] lg:max-w-auto mx-auto lg:mx-0'>
+					<h1 className='text-center lg:text-left text-[64px] leading-[56px] lg:leading-[100px] lg:max-w-[10ch] mb-6 lg:mb-4'>
 						Contact
 					</h1>
-					<h2 className='text-lc text-[32px] leading-[48px] mb-8'>
+					<h2 className='text-lc text-center lg:text-left text-[32px] leading-[48px] mb-8'>
 						Ask us about
 					</h2>
 					<div className='flex justify-start items-center gap-[23px] mb-2'>
