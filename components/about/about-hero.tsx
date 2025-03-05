@@ -1,9 +1,11 @@
 const AboutHero = () => {
 	return (
-		<section className='py-[112px] lg:py-[120px] relative'>
-			<div className='max-w-[683px] lg:max-w-[1110px] mx-auto flex flex-col justify-between items-center gap-[24px] lg:grid lg:grid-cols-[350px_730px] lg:gap-[30px] relative'>
+		<section className='px-6 md:px-0 pt-[80px] pb-[108px] md:py-[112px] lg:py-[120px] relative'>
+			<div className='max-w-[683px] lg:max-w-[1110px] mx-auto flex flex-col justify-between items-center lg:items-start gap-[24px] lg:grid lg:grid-cols-[350px_730px] lg:gap-[30px] relative'>
 				<div>
-					<h1 className='text-[64px] leading-[100px] max-w-[10ch]'>About</h1>
+					<h1 className='text-[40px] leading-[40px] md:text-[64px] md:leading-[56px] lg:text-[64px] lg:leading-[100px] max-w-[10ch]'>
+						About
+					</h1>
 				</div>
 				<div className='flex flex-col items-start justify-between'>
 					<span className='h-1 w-[50px] bg-lc hidden lg:block' />
@@ -19,7 +21,7 @@ const AboutHero = () => {
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='200'
-				className='absolute bottom-0 -right-[100px]'
+				className='absolute -bottom-[100px] md:bottom-0 -right-[100px]'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100H0V0h100z' />
