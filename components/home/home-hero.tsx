@@ -29,8 +29,8 @@ const HomeHero = () => {
 					<span className='hidden lg:block h-1 w-[50px] bg-rb' />
 					<p className='text-[15px] leading-[28px] text-center max-w-[457px] lg:text-left lg:max-w-auto lg:text-[18px]'>
 						Finding the right people and building high performing teams can be
-						hard. Most companies aren't tapping into the abundance of global
-						talent. We're about to change that.
+						hard. Most companies aren&apos;t tapping into the abundance of
+						global talent. We&apos;re about to change that.
 					</p>
 				</div>
 				<svg

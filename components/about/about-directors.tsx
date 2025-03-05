@@ -43,7 +43,6 @@ const directors = [
 	},
 ];
 import AboutDirectorBlock from './about-director-block';
-import Image from 'next/image';
 
 const AboutDirectors = () => {
 	return (
@@ -75,7 +74,7 @@ const AboutDirectors = () => {
 			</h2>
 			<div className='max-w-[573px] lg:max-w-[1110px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[11px] lg:gap-x-[30px] gap-y-[52px] md:gap-y-[76px]'>
 				{directors.map((d) => (
-					<AboutDirectorBlock director={d} />
+					<AboutDirectorBlock key={d.name} director={d} />
 				))}
 			</div>
 			<svg
