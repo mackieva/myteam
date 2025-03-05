@@ -3,7 +3,7 @@ import Link from 'next/link';
 const FooterNav = () => {
 	return (
 		<nav className='mr-auto'>
-			<ul className='menu flex justify-start items-center gap-10 body-one'>
+			<ul className='menu flex justify-start items-center gap-10 text-[15px] lg:text-[18px] leading-[18px]'>
 				<li>
 					<Link
 						href='/'
