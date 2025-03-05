@@ -30,7 +30,7 @@ const AboutDirectorBlock = ({ director }: { director: Director }) => {
 	const [selected, setSelected] = useState(false);
 	return (
 		<div
-			className={`py-8 px-6 flex flex-col items-center relative ${
+			className={`pt-[35px] pb-[56px] lg:pt-[32px] px-6 flex flex-col items-center relative ${
 				selected ? 'bg-dg' : 'bg-ssg'
 			}`}
 		>
@@ -54,14 +54,14 @@ const AboutDirectorBlock = ({ director }: { director: Director }) => {
 						{director.title}
 					</motion.p>
 					<motion.p
-						className='body-two mt-2 mb-6 px-6 text-center'
+						className='body-two mt-2 mb-6 px-0 lg:px-6 text-center'
 						variants={variants}
 						animate={selected ? 'show' : 'hide'}
 					>
 						"{director.quote}"
 					</motion.p>
 					<motion.div
-						className='flex justify-between items-center gap-3 mb-2'
+						className='flex justify-between items-center gap-3'
 						variants={variants}
 						animate={selected ? 'show' : 'hide'}
 					>

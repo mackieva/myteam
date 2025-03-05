@@ -47,7 +47,7 @@ import Image from 'next/image';
 
 const AboutDirectors = () => {
 	return (
-		<section className='bg-djg py-[140px] relative'>
+		<section className='bg-djg pt-[100px] pb-[128px] lg:py-[140px] relative'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
@@ -71,7 +71,7 @@ const AboutDirectors = () => {
 				</g>
 			</svg>
 			<h2 className='h2 text-center mb-14'>Meet the directors</h2>
-			<div className='max-w-[1110px] mx-auto grid grid-cols-3 gap-x-[30px] gap-y-[76px]'>
+			<div className='max-w-[573px] lg:max-w-[1110px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-x-[11px] lg:gap-x-[30px] gap-y-[76px]'>
 				{directors.map((d) => (
 					<AboutDirectorBlock director={d} />
 				))}
