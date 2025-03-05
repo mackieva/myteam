@@ -2,12 +2,12 @@ import Button from './button';
 
 const PreFooter = () => {
 	return (
-		<section className='bg-lc py-[76px] relative overflow-hidden'>
+		<section className='bg-lc px-6 md:px-0 py-[83px] md:py-[76px] relative overflow-hidden'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='144'
-				className='absolute lg:bottom-0 left-0'
+				className='absolute -bottom-[22px] lg:bottom-0 left-0'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 144H0V44h100z' />
@@ -25,8 +25,8 @@ const PreFooter = () => {
 					/>
 				</g>
 			</svg>
-			<div className='max-w-[573px] lg:max-w-[917px] mx-auto flex justify-between items-center'>
-				<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-ssg'>
+			<div className='max-w-[573px] lg:max-w-[917px] mx-auto flex flex-col text-center md:text-left md:flex-row justify-between items-center'>
+				<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-ssg mb-6 md:mb-0'>
 					Ready to get started?
 				</h2>
 				<Button style='primary-dark' link='/contact' label='contact us' />
