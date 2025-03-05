@@ -58,7 +58,7 @@ const AboutDirectorBlock = ({ director }: { director: Director }) => {
 						variants={variants}
 						animate={selected ? 'show' : 'hide'}
 					>
-						&quote;{director.quote}&quote;
+						&quot;{director.quote}&quot;
 					</motion.p>
 					<motion.div
 						className='flex justify-between items-center gap-3'
