@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/website-build-using-nextjs-and-tailwind4-with-some-framer-motion-IXJ86S-nmd](https://www.frontendmentor.io/solutions/website-build-using-nextjs-and-tailwind4-with-some-framer-motion-IXJ86S-nmd)
 - Live Site URL: [https://myteam-psi-ivory.vercel.app/](https://myteam-psi-ivory.vercel.app/)
 
 ## My process
