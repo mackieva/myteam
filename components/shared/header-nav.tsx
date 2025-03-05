@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Nav = () => {
+const HeaderNav = () => {
 	return (
 		<nav className='mr-auto'>
 			<ul className='menu flex justify-start items-center gap-10 body-one'>
@@ -25,4 +25,4 @@ const Nav = () => {
 	);
 };
 
-export default Nav;
+export default HeaderNav;

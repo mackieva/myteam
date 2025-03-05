@@ -1,6 +1,6 @@
 import logo from '@/public/assets/images/logo.svg';
 import Image from 'next/image';
-import Nav from '../shared/nav';
+import HeaderNav from '../shared/header-nav';
 import Button from '../shared/button';
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
 				priority={true}
 				className='w-[128px] md:mr-12 lg:mr-20 lg:w-auto'
 			/>
-			<Nav />
+			<HeaderNav />
 			<Button style='primary-light' link='/contact' label='contact us' />
 		</header>
 	);

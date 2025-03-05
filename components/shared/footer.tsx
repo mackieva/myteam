@@ -1,5 +1,5 @@
 import logo from '@/public/assets/images/logo.svg';
-import Nav from './nav';
+import FooterNav from './footer-nav';
 import Image from 'next/image';
 import Social from './social';
 
@@ -14,7 +14,7 @@ const Footer = () => {
 						priority={true}
 						className='w-[96px] lg:w-[160px]'
 					/>
-					<Nav />
+					<FooterNav />
 				</div>
 				<p className='body-two opacity-60 text-right lg:text-left'>
 					987 Hillcrest Lane
