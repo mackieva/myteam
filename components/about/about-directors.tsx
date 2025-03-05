@@ -47,12 +47,12 @@ import Image from 'next/image';
 
 const AboutDirectors = () => {
 	return (
-		<section className='bg-djg pt-[100px] pb-[128px] lg:py-[140px] relative'>
+		<section className='bg-djg px-6 md:px-0 pt-[88px] pb-[118px] md:pt-[100px] md:pb-[128px] lg:py-[140px] relative overflow-hidden'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='200'
-				className='absolute top-0 -left-[100px]'
+				className='absolute -top-[100px] md:top-0 -left-[100px]'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100h100V0H100z' />
@@ -70,8 +70,10 @@ const AboutDirectors = () => {
 					/>
 				</g>
 			</svg>
-			<h2 className='h2 text-center mb-14'>Meet the directors</h2>
-			<div className='max-w-[573px] lg:max-w-[1110px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-x-[11px] lg:gap-x-[30px] gap-y-[76px]'>
+			<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-center mb-12 lg:mb-14'>
+				Meet the directors
+			</h2>
+			<div className='max-w-[573px] lg:max-w-[1110px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[11px] lg:gap-x-[30px] gap-y-[52px] md:gap-y-[76px]'>
 				{directors.map((d) => (
 					<AboutDirectorBlock director={d} />
 				))}
