@@ -45,6 +45,7 @@ const MobileNav = () => {
 								<Link
 									href='/'
 									className='transition-colors duration-300 hover:text-lc'
+									onClick={() => setOpen(false)}
 								>
 									home
 								</Link>
@@ -53,6 +54,7 @@ const MobileNav = () => {
 								<Link
 									href='/about'
 									className='transition-colors duration-300 hover:text-lc'
+									onClick={() => setOpen(false)}
 								>
 									about
 								</Link>
@@ -62,6 +64,7 @@ const MobileNav = () => {
 					<Link
 						href='/contact'
 						className='body-one px-8 pt-2 pb-3 rounded-3xl btn btn-primary-light place-self-start'
+						onClick={() => setOpen(false)}
 					>
 						contact us
 					</Link>
