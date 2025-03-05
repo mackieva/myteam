@@ -7,12 +7,12 @@ import Image from 'next/image';
 
 const AboutClients = () => {
 	return (
-		<section className='bg-ssg py-[100px] lg:py-[140px] relative overflow-hidden'>
+		<section className='bg-ssg py-[88px] md:py-[100px] lg:py-[140px] relative overflow-hidden'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='200'
 				height='200'
-				className='absolute -top-[100px] lg:top-0 left-0'
+				className='absolute -top-[100px] lg:top-0 -left-[100px] md:left-0'
 			>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#2C6269' d='M100 100H0V0h100z' />
@@ -30,31 +30,31 @@ const AboutClients = () => {
 				<h2 className='text-[32px] leading-[32px] lg:text-[48px] lg:leading-[48px] text-center mb-14'>
 					Some of our clients
 				</h2>
-				<div className='flex justify-between items-center gap-[50px] lg:gap-[80px]'>
+				<div className='flex flex-col md:flex-row justify-between items-center gap-[55px] md:gap-[50px] lg:gap-[80px]'>
 					<Image
 						src={verge}
 						alt='The Verge Text Logo'
-						className='w-[75%] h-auto lg:w-auto'
+						className='w-auto md:w-[75%] h-auto lg:w-auto'
 					/>
 					<Image
 						src={jakarta}
 						alt='The Jakarta Post Text Logo'
-						className='w-[75%] h-auto lg:w-auto'
+						className='w-auto md:w-[75%] h-auto lg:w-auto'
 					/>
 					<Image
 						src={guardian}
 						alt='The Guardian Text Logo'
-						className='w-[75%] h-auto lg:w-auto'
+						className='w-auto md:w-[75%] h-auto lg:w-auto'
 					/>
 					<Image
 						src={techradar}
 						alt='techradar Text Logo'
-						className='w-[75%] h-auto lg:w-auto'
+						className='w-auto md:w-[75%] h-auto lg:w-auto'
 					/>
 					<Image
 						src={gadgets}
 						alt='Gadgets Now Text Logo'
-						className='w-[75%] lg:w-auto'
+						className='w-auto md:w-[75%] lg:w-auto'
 					/>
 				</div>
 			</div>
