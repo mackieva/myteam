@@ -1,13 +1,13 @@
 const AboutHero = () => {
 	return (
-		<section className='py-[120px] relative'>
-			<div className='max-w-[1110px] mx-auto grid grid-cols-[350px_730px] gap-[30px] relative'>
+		<section className='py-[112px] lg:py-[120px] relative'>
+			<div className='max-w-[683px] lg:max-w-[1110px] mx-auto flex flex-col justify-between items-center gap-[24px] lg:grid lg:grid-cols-[350px_730px] lg:gap-[30px] relative'>
 				<div>
 					<h1 className='text-[64px] leading-[100px] max-w-[10ch]'>About</h1>
 				</div>
 				<div className='flex flex-col items-start justify-between'>
-					<span className='h-1 w-[50px] bg-lc' />
-					<p className='body-one mt-[44px]'>
+					<span className='h-1 w-[50px] bg-lc hidden lg:block' />
+					<p className='text-[15px] leading-[28px] max-w-[457px] lg:max-w-full mt-0 lg:mt-[44px] text-center lg:text-left lg:text-[18px]'>
 						We help companies build dynamic teams made up of top global talent.
 						Using our network of passionate professionals we drive innovation
 						and deliver incredible outcomes. Talented, diverse teams shape the
