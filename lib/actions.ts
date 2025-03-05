@@ -13,5 +13,6 @@ export function contactAction(prevState: unknown, formData: FormData) {
 
 	return {
 		name: validatedData.data.name,
+		success: true,
 	};
 }

@@ -1,6 +1,7 @@
 'use client';
 import { contactAction } from '@/lib/actions';
 import { useActionState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 interface InitialState {
 	errors?: {
@@ -14,6 +15,7 @@ interface InitialState {
 		[k: string]: FormDataEntryValue;
 	};
 	name?: string;
+	success?: boolean;
 }
 
 const ContactForm = () => {
@@ -21,8 +23,20 @@ const ContactForm = () => {
 		errors: {},
 		data: { name: '', email: '', company: '', title: '', message: '' },
 		name: '',
+		success: false,
 	};
+
 	const [state, formAction] = useActionState(contactAction, initialState);
+
+	if (state.success === true) {
+		toast(
+			`Thank you for getting in touch ${state.name}!  We've received your message and will be in touch.`,
+			{
+				position: 'top-center',
+			}
+		);
+	}
+
 	return (
 		<form
 			className='flex flex-col justify-between items-start gap-6'
@@ -40,7 +54,7 @@ const ContactForm = () => {
 				defaultValue={state?.data?.name as string}
 			/>
 			{state?.errors?.name && (
-				<p className='text-[10px] text-lc italic ml-[14px] -mt-4'>
+				<p className='-mt-4 ml-[14px] text-[10px] text-lc italic'>
 					{state.errors.name}
 				</p>
 			)}
@@ -56,7 +70,7 @@ const ContactForm = () => {
 				defaultValue={state?.data?.email as string}
 			/>
 			{state?.errors?.email && (
-				<p className='text-[10px] text-lc italic ml-[14px] -mt-4'>
+				<p className='-mt-4 ml-[14px] text-[10px] text-lc italic'>
 					{state.errors.email.join(', ')}
 				</p>
 			)}
@@ -71,7 +85,7 @@ const ContactForm = () => {
 				defaultValue={state?.data?.company as string}
 			/>
 			{state?.errors?.company && (
-				<p className='text-[10px] text-lc italic ml-[14px] -mt-4'>
+				<p className='-mt-4 ml-[14px] text-[10px] text-lc italic'>
 					{state.errors.company}
 				</p>
 			)}
@@ -86,7 +100,7 @@ const ContactForm = () => {
 				defaultValue={state?.data?.title as string}
 			/>
 			{state?.errors?.title && (
-				<p className='text-[10px] text-lc italic ml-[14px] -mt-4'>
+				<p className='-mt-4 ml-[14px] text-[10px] text-lc italic'>
 					{state.errors.title}
 				</p>
 			)}
@@ -102,16 +116,17 @@ const ContactForm = () => {
 				rows={3}
 			/>
 			{state?.errors?.message && (
-				<p className='text-[10px] text-lc italic ml-[14px] -mt-4'>
+				<p className='-mt-4 ml-[14px] text-[10px] text-lc italic'>
 					{state.errors.message}
 				</p>
 			)}
 			<button
 				type='submit'
-				className='border-2 border-white bg-white text-djg px-8 pt-[9px] pb-[11px] rounded-3xl transition-all duration-300 hover:bg-rb hover:border-rb hover:cursor-pointer focus:bg-rb focus:border-rb outline-0'
+				className='bg-white hover:bg-rb focus:bg-rb px-8 pt-[9px] pb-[11px] border-2 border-white hover:border-rb focus:border-rb rounded-3xl outline-0 text-djg transition-all duration-300 hover:cursor-pointer'
 			>
 				submit
 			</button>
+			<ToastContainer />
 		</form>
 	);
 };

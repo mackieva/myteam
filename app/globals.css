@@ -5,6 +5,10 @@
 	--foreground: #171717;
 	--red-filter: brightness(0) saturate(100%) invert(74%) sepia(35%)
 		saturate(1456%) hue-rotate(307deg) brightness(100%) contrast(93%);
+	--toastify-color-progress-light: hsl(0, 87%, 73%);
+	--toastify-text-color-light: #fff;
+	--toastify-color-light: hsl(187, 41%, 29%);
+	--toastify-font-family: var(--font-livvic);
 }
 
 @media (prefers-color-scheme: dark) {

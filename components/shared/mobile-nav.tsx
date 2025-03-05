@@ -7,16 +7,16 @@ const MobileNav = () => {
 	return (
 		<>
 			<button
-				className='block hover:cursor-pointer md:hidden'
+				className='md:hidden block hover:cursor-pointer'
 				onClick={() => setOpen(true)}
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					width='20'
 					height='17'
-					className='block md:hidden'
+					className='md:hidden block'
 				>
-					<g fill='#FFF' fill-rule='evenodd'>
+					<g fill='#FFF' fillRule='evenodd'>
 						<path d='M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z' />
 					</g>
 				</svg>
@@ -26,25 +26,25 @@ const MobileNav = () => {
 					open ? 'right-0' : '-right-[300px]'
 				}`}
 			>
-				<div className='h-full w-full relative pt-14 pr-[25px] pl-12 flex items-end flex-col'>
+				<div className='relative flex flex-col items-end pt-14 pr-[25px] pl-12 w-full h-full'>
 					<button
 						onClick={() => setOpen(false)}
-						className='hover:cursor-pointer mb-[39px]'
+						className='mb-[39px] hover:cursor-pointer'
 					>
 						<svg xmlns='http://www.w3.org/2000/svg' width='18' height='17'>
 							<path
 								fill='#FFF'
-								fill-rule='evenodd'
+								fillRule='evenodd'
 								d='M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z'
 							/>
 						</svg>
 					</button>
-					<nav className='w-full mb-9'>
+					<nav className='mb-9 w-full'>
 						<ul className='flex flex-col justify-start items-start gap-6 body-one'>
 							<li>
 								<Link
 									href='/'
-									className='transition-colors duration-300 hover:text-lc'
+									className='hover:text-lc transition-colors duration-300'
 									onClick={() => setOpen(false)}
 								>
 									home
@@ -53,7 +53,7 @@ const MobileNav = () => {
 							<li>
 								<Link
 									href='/about'
-									className='transition-colors duration-300 hover:text-lc'
+									className='hover:text-lc transition-colors duration-300'
 									onClick={() => setOpen(false)}
 								>
 									about
@@ -63,7 +63,7 @@ const MobileNav = () => {
 					</nav>
 					<Link
 						href='/contact'
-						className='body-one px-8 pt-2 pb-3 rounded-3xl btn btn-primary-light place-self-start'
+						className='place-self-start px-8 pt-2 pb-3 rounded-3xl body-one btn btn-primary-light'
 						onClick={() => setOpen(false)}
 					>
 						contact us
@@ -72,9 +72,9 @@ const MobileNav = () => {
 						xmlns='http://www.w3.org/2000/svg'
 						width='200'
 						height='200'
-						className='absolute bottom-0 -right-[100px]'
+						className='-right-[100px] bottom-0 absolute'
 					>
-						<g fill='none' fill-rule='evenodd'>
+						<g fill='none' fillRule='evenodd'>
 							<path fill='#2C6269' d='M100 100H0V0h100z' />
 							<path
 								fill='#F67E7E'
